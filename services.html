@@ -94,6 +94,12 @@
     .nav-has-drop:hover .nav-dropdown { display: block; }
     .nav-dropdown li a { display: block; padding: 11px 22px; color: var(--navy) !important; font-size: 0.875rem; font-weight: 500; transition: background 0.15s; }
     .nav-dropdown li a:hover { background: var(--light-bg); color: var(--teal) !important; }
+    .nav-has-subdrop { position: relative; }
+    .nav-subdropdown { display: none; position: absolute; top: 0; left: 100%; margin-left: 8px; background: var(--white); border-radius: 10px; min-width: 200px; box-shadow: 0 8px 32px rgba(0,0,0,0.13); padding: 8px 0; z-index: 300; }
+    .nav-has-subdrop:hover .nav-subdropdown { display: block; }
+    .nav-subdropdown li a { display: block; padding: 11px 22px; color: var(--navy) !important; font-size: 0.875rem; font-weight: 500; transition: background 0.15s; }
+    .nav-subdropdown li a:hover { background: var(--light-bg); color: var(--teal) !important; }
+    .nav-dropdown-wide { min-width: 280px; }
     .nav-cta { background: var(--gold); color: var(--navy) !important; font-weight: 700 !important; padding: 9px 20px; border-radius: 6px; transition: background 0.2s, transform 0.15s !important; }
     .nav-cta:hover { background: #d4911a !important; transform: translateY(-1px); }
     .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
@@ -437,7 +443,10 @@
       .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); padding: 20px 24px 28px; gap: 6px; box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
       .nav-links.open { display: flex; }
       .nav-links a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 1rem; }
-      .nav-dropdown { position: static; transform: none; box-shadow: none; border-radius: 0; background: rgba(255,255,255,0.05); }
+      .nav-dropdown, .nav-subdropdown { position: static; transform: none; box-shadow: none; border-radius: 0; background: rgba(255,255,255,0.05); margin: 0; }
+      .nav-has-drop.open .nav-dropdown, .nav-has-subdrop.open .nav-subdropdown { display: block; }
+      .nav-dropdown li a, .nav-subdropdown li a { color: rgba(255,255,255,0.85) !important; padding: 10px 24px; border: none; }
+      .nav-dropdown li a:hover, .nav-subdropdown li a:hover { background: rgba(255,255,255,0.08) !important; color: var(--gold) !important; }
       .hamburger { display: flex; }
       .footer-inner { grid-template-columns: 1fr 1fr; gap: 32px; }
       .process-steps::before { display: none; }
@@ -483,14 +492,43 @@
       <li class="nav-has-drop">
         <a href="services.html" class="active">Services ▾</a>
         <ul class="nav-dropdown">
-          <li><a href="metal-roof-waterproofing-dubai.html">Metal Roof Waterproofing</a></li>
-          <li><a href="services.html#waterproofing">Waterproofing Services</a></li>
-          <li><a href="services.html#additional">Additional Services</a></li>
-          <li><a href="services.html#technical">Technical Works</a></li>
+          <li><a href="services.html#metal-roof">Metal Roof Waterproofing</a></li>
+          <li><a href="services.html#corrugated-roof">Corrugated Roof Repair</a></li>
+          <li><a href="services.html#warehouse">Warehouse Waterproofing</a></li>
+          <li><a href="services.html#commercial">Commercial Roof Repair</a></li>
+          <li><a href="services.html#residential">Residential Roof Waterproofing</a></li>
+          <li><a href="services.html#emergency">Emergency Roof Repair</a></li>
+        </ul>
+      </li>
+      <li class="nav-has-drop">
+        <a href="#locations">Locations ▾</a>
+        <ul class="nav-dropdown nav-dropdown-wide">
+          <li class="nav-has-subdrop">
+            <a href="#dubai">Dubai ▸</a>
+            <ul class="nav-subdropdown">
+              <li><a href="index.html#dubai-deira">Deira</a></li>
+              <li><a href="index.html#dubai-downtown">Downtown</a></li>
+              <li><a href="index.html#dubai-jebel-ali">Jebel Ali</a></li>
+              <li><a href="index.html#dubai-emirates-hills">Emirates Hills</a></li>
+            </ul>
+          </li>
+          <li class="nav-has-subdrop">
+            <a href="#abu-dhabi">Abu Dhabi ▸</a>
+            <ul class="nav-subdropdown">
+              <li><a href="index.html#abu-dhabi-mussafah">Mussafah</a></li>
+              <li><a href="index.html#abu-dhabi-al-ain">Al Ain</a></li>
+            </ul>
+          </li>
+          <li class="nav-has-subdrop">
+            <a href="#sharjah">Sharjah ▸</a>
+            <ul class="nav-subdropdown">
+              <li><a href="index.html#sharjah-industrial">Emirates Industrial City</a></li>
+            </ul>
+          </li>
         </ul>
       </li>
       <li><a href="index.html#our-work">Our Work</a></li>
-      <li><a href="company.html">Clients &amp; Team</a></li>
+      <li><a href="index.html#clients">Clients &amp; Team</a></li>
       <li><a href="index.html#faq">FAQ</a></li>
       <li><a href="index.html#contact" class="nav-cta">Free Inspection</a></li>
     </ul>
@@ -892,12 +930,30 @@
 
 <script>
   function toggleNav() {
-    document.getElementById('navLinks').classList.toggle('open');
+    const navLinks = document.getElementById('navLinks');
+    const hamburger = document.getElementById('hamburger');
+    navLinks.classList.toggle('open');
+    if (hamburger) hamburger.classList.toggle('open');
   }
+  
+  // Mobile: Toggle nested dropdowns
+  document.querySelectorAll('.nav-has-drop, .nav-has-subdrop').forEach(item => {
+    item.addEventListener('click', (e) => {
+      if (window.innerWidth <= 900) {
+        e.preventDefault();
+        item.classList.toggle('open');
+      }
+    });
+  });
+  
   // Close nav on link click (mobile)
   document.querySelectorAll('.nav-links a').forEach(a => {
     a.addEventListener('click', () => {
-      document.getElementById('navLinks').classList.remove('open');
+      if (window.innerWidth <= 900) {
+        document.getElementById('navLinks').classList.remove('open');
+        const hamburger = document.getElementById('hamburger');
+        if (hamburger) hamburger.classList.remove('open');
+      }
     });
   });
 </script>
