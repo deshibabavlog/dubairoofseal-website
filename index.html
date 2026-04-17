@@ -302,16 +302,16 @@
       background: var(--white); border-radius: 10px; min-width: 220px;
       box-shadow: 0 8px 28px rgba(0,0,0,0.18);
       /* padding-top creates invisible bridge so mouse can travel from nav item to dropdown */
-      padding: 8px 0 8px; margin-top: 0;
+      padding: 12px 0 12px; margin-top: -6px;
       z-index: 200; flex-direction: column; gap: 0;
     }
     /* Invisible bridge above dropdown so hover doesn't break when mouse moves down */
     .nav-dropdown::before {
-      content: ''; position: absolute; top: -12px; left: 0; right: 0; height: 12px;
+      content: ''; position: absolute; top: -16px; left: 0; right: 0; height: 16px;
     }
     .nav-has-drop:hover .nav-dropdown { display: flex; }
     .nav-dropdown li a {
-      display: block; padding: 11px 22px; color: var(--navy) !important;
+      display: block; padding: 12px 24px; color: var(--navy) !important;
       font-size: 0.88rem; font-weight: 600; transition: background 0.15s, color 0.15s;
       white-space: nowrap;
     }
@@ -336,7 +336,7 @@
       white-space: nowrap;
     }
     .nav-subdropdown li a:hover { background: var(--light-bg); color: var(--teal) !important; }
-    .nav-dropdown-wide { min-width: 280px; }
+    .nav-dropdown-wide { min-width: 200px; }
 
     /* ===== HERO ===== */
     #home {
@@ -1231,28 +1231,9 @@
       <li class="nav-has-drop">
         <a href="dubai-roof-waterproofing.html">Locations ▾</a>
         <ul class="nav-dropdown nav-dropdown-wide">
-          <li class="nav-has-subdrop">
-            <a href="dubai-roof-waterproofing.html">Dubai ▸</a>
-            <ul class="nav-subdropdown">
-              <li><a href="dubai-roof-waterproofing.html#deira">Deira</a></li>
-              <li><a href="dubai-roof-waterproofing.html#downtown">Downtown</a></li>
-              <li><a href="dubai-roof-waterproofing.html#jebel-ali">Jebel Ali</a></li>
-              <li><a href="dubai-roof-waterproofing.html#emirates-hills">Emirates Hills</a></li>
-            </ul>
-          </li>
-          <li class="nav-has-subdrop">
-            <a href="abu-dhabi-roof-waterproofing.html">Abu Dhabi ▸</a>
-            <ul class="nav-subdropdown">
-              <li><a href="abu-dhabi-roof-waterproofing.html#mussafah">Mussafah</a></li>
-              <li><a href="abu-dhabi-roof-waterproofing.html#al-ain">Al Ain</a></li>
-            </ul>
-          </li>
-          <li class="nav-has-subdrop">
-            <a href="sharjah-roof-waterproofing.html">Sharjah ▸</a>
-            <ul class="nav-subdropdown">
-              <li><a href="sharjah-roof-waterproofing.html#eic">Emirates Industrial City</a></li>
-            </ul>
-          </li>
+          <li><a href="dubai-roof-waterproofing.html">Dubai</a></li>
+          <li><a href="abu-dhabi-roof-waterproofing.html">Abu Dhabi</a></li>
+          <li><a href="sharjah-roof-waterproofing.html">Sharjah</a></li>
         </ul>
       </li>
       <li><a href="#our-work">Our Work</a></li>
