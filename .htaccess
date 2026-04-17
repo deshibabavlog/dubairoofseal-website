@@ -7,19 +7,13 @@
   RewriteEngine On
   RewriteBase /
   
-  # Remove .html extension from URLs
-  # Rewrite /page.html to /page/
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^([^\.]+)$ $1/ [L,R=301]
+  # Allow direct access to .html files
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule \.(html|css|js|jpg|jpeg|png|gif|ico|svg|woff|woff2|ttf)$ - [L]
   
-  # Rewrite /page/ to /page/index.html
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.+)/?$ $1/index.html [L]
-  
-  # For direct index.html access, rewrite to root directory style
-  RewriteRule ^index\.html$ / [L,R=301]
+  # Allow direct access to existing directories
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
 </IfModule>
 
 # Security Headers
