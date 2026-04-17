@@ -1,0 +1,40 @@
+# Dubai Roof Seal - URL Rewrite Rules
+# This file enables clean URLs like /services/metal-roof-waterproofing/
+# instead of /services/metal-roof-waterproofing/index.html
+
+# Enable Rewrite Engine
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Remove .html extension from URLs
+  # Rewrite /page.html to /page/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^([^\.]+)$ $1/ [L,R=301]
+  
+  # Rewrite /page/ to /page/index.html
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+)/?$ $1/index.html [L]
+  
+  # For direct index.html access, rewrite to root directory style
+  RewriteRule ^index\.html$ / [L,R=301]
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript
+</IfModule>
+
+# Cache Control
+<FilesMatch "\.(jpg|jpeg|png|gif|ico|css|js|woff|woff2|ttf)$">
+  Header set Cache-Control "max-age=31536000, public"
+</FilesMatch>
