@@ -3,16 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <title>Al Ain | Dubai Roof Seal</title>
     <meta name="robots" content="noindex, follow">
     <style>
-        body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
-        h1 { color: #1A3A5C; }
-    </style>
+    :root {
+      --navy: #1A3A5C;
+      --gold: #E8A020;
+      --teal: #0F6E56;
+      --white: #FFFFFF;
+      --light-bg: #F4F7FB;
+      --dark-text: #2C2C2C;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Open Sans', Arial, sans-serif; color: var(--dark-text); background: #fff; }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+    
+    .top-bar { background: #060f1c; padding: 7px 24px; display: flex; align-items: center; justify-content: center; gap: 32px; flex-wrap: wrap; }
+    .top-bar a { display: inline-flex; align-items: center; gap: 7px; color: rgba(255,255,255,0.78); font-size: 0.78rem; font-weight: 500; transition: color 0.2s; white-space: nowrap; }
+    .top-bar a:hover { color: var(--gold); }
+    .top-bar a svg { width: 14px; height: 14px; fill: var(--gold); flex-shrink: 0; }
+    .top-bar-sep { color: rgba(255,255,255,0.2); font-size: 0.7rem; }
+    @media (max-width: 600px) { .top-bar { gap: 14px; } .top-bar-sep { display: none; } }
+    
+    header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--navy); box-shadow: 0 2px 12px rgba(0,0,0,0.18); display: flex; flex-direction: column; }
+    nav { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 24px; height: 80px; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo { height: 68px; width: auto; filter: invert(1); mix-blend-mode: screen; transition: opacity 0.2s; }
+    .nav-logo:hover { opacity: 0.85; }
+    .logo-text { display: flex; flex-direction: column; justify-content: center; line-height: 1; }
+    .logo-name { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 1.15rem; color: var(--white); letter-spacing: -0.3px; line-height: 1.2; }
+    .logo-tag { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 0.62rem; color: var(--teal); letter-spacing: 0.08em; text-transform: uppercase; margin-top: 3px; }
+    .nav-links { display: flex; gap: 32px; align-items: center; list-style: none; }
+    .nav-links > li { position: relative; }
+    .nav-links a { color: rgba(255,255,255,0.85); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; padding: 8px 0; text-decoration: none; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-links a.active { color: var(--gold); }
+    .nav-has-drop { position: relative; }
+    .nav-dropdown { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); background: var(--white); border-radius: 10px; min-width: 220px; box-shadow: 0 8px 32px rgba(0,0,0,0.13); padding: 8px 0; z-index: 200; list-style: none; margin: 0; }
+    .nav-has-drop:hover .nav-dropdown { display: block; }
+    .nav-dropdown li a { display: block; padding: 11px 22px; color: var(--navy) !important; font-size: 0.875rem; font-weight: 500; transition: background 0.15s; text-decoration: none; }
+    .nav-dropdown li a:hover { background: var(--light-bg); color: var(--teal) !important; }
+    .nav-has-subdrop { position: relative; }
+    .nav-subdropdown { display: none; position: absolute; top: 0; left: 100%; margin-left: 8px; background: var(--white); border-radius: 10px; min-width: 200px; box-shadow: 0 8px 32px rgba(0,0,0,0.13); padding: 8px 0; z-index: 300; list-style: none; }
+    .nav-has-subdrop:hover .nav-subdropdown { display: block; }
+    .nav-subdropdown li a { display: block; padding: 11px 22px; color: var(--navy) !important; font-size: 0.875rem; font-weight: 500; transition: background 0.15s; text-decoration: none; }
+    .nav-subdropdown li a:hover { background: var(--light-bg); color: var(--teal) !important; }
+    .nav-dropdown-wide { min-width: 280px; }
+    .nav-cta { background: var(--gold); color: var(--navy) !important; font-weight: 700 !important; padding: 9px 20px; border-radius: 6px; transition: background 0.2s, transform 0.15s !important; }
+    .nav-cta:hover { background: #d4911a !important; transform: translateY(-1px); }
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 5px; }
+    .hamburger span { width: 26px; height: 2.5px; background: #fff; border-radius: 2px; transition: 0.3s; }
+    
+    @media (max-width: 768px) {
+      nav { height: auto; }
+      .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--navy); padding: 20px 24px; gap: 6px; width: 100%; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,0.07); font-size: 1rem; }
+      .hamburger { display: flex; }
+      .nav-dropdown, .nav-subdropdown { position: static; display: none; background: rgba(255,255,255,0.05); box-shadow: none; border-radius: 0; transform: none; margin: 0; }
+      .nav-has-drop.open .nav-dropdown, .nav-has-subdrop.open .nav-subdropdown { display: block; }
+      .nav-dropdown li a, .nav-subdropdown li a { color: rgba(255,255,255,0.85) !important; padding: 10px 24px; border: none; }
+      .nav-dropdown li a:hover, .nav-subdropdown li a:hover { background: rgba(255,255,255,0.08) !important; color: var(--gold) !important; }
+    }
+    
+    main { margin-top: 104px; padding: 40px 24px; text-align: center; }
+    h1 { color: var(--navy); margin-bottom: 20px; }
+</style>
 </head>
 <body>
-    <h1>Al Ain</h1>
-    <p>Page coming soon...</p>
-    <p><a href="/">← Back to Home</a></p>
+    <header>
+        <div class="top-bar">
+  <a href="tel:+971561123894">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 5c0-1.1.9-2 2-2h3.15a1 1 0 01.97 1.22l-.82 4.1a1 1 0 01-.96.68h-2.4a9.969 9.969 0 0014.24 14.24v-2.4a1 1 0 01.68-.96l4.1-.82a1 1 0 011.22.97V19c0 1.1-.9 2-2 2C10.46 21 3 13.54 3 5z"/></svg>
+    +971 56 112 3894
+  </a>
+  <span class="top-bar-sep">•</span>
+  <a href="https://wa.me/971561123894" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.6 6.4a8.4 8.4 0 00-14.88 4.8 8.36 8.36 0 001.28 4.16l-1.36 4.08 4.24-1.36a8.36 8.36 0 004 1.04 8.4 8.4 0 008.4-8.4 8.36 8.36 0 00-1.68-5.32zm-8.4 12.96a6.96 6.96 0 01-3.52-.96l-.24-.12-2.52.8.8-2.48-.16-.24a6.96 6.96 0 011.36-11.44 6.96 6.96 0 016.96 0c3.2 1.92 5.36 5.36 5.36 9.04 0 3.84-3.12 6.96-6.96 6.96z"/></svg>
+    WhatsApp
+  </a>
+  <span class="top-bar-sep">•</span>
+  <a href="mailto:info@dubairoofseal.com">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+    info@dubairoofseal.com
+  </a>
+</div>
+
+<nav>
+  <a href="/" class="logo" aria-label="Dubai Roof Seal - Home">
+    <img src="/logo.png" alt="Dubai Roof Seal Logo" class="nav-logo" />
+    <div class="logo-text">
+      <span class="logo-name">Dubai Roof Seal</span>
+      <span class="logo-tag">Waterproofing &amp; Technical Services</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="/">Home</a></li>
+    <li class="nav-has-drop">
+      <a href="/services/">Services ▾</a>
+      <ul class="nav-dropdown">
+        <li><a href="/services/metal-roof-waterproofing/">Metal Roof Waterproofing</a></li>
+        <li><a href="/services/corrugated-roof-repair/">Corrugated Roof Repair</a></li>
+        <li><a href="/services/warehouse-waterproofing/">Warehouse Waterproofing</a></li>
+        <li><a href="/services/commercial-roof-repair/">Commercial Roof Repair</a></li>
+        <li><a href="/services/residential-roof-waterproofing/">Residential Roof Waterproofing</a></li>
+        <li><a href="/services/emergency-roof-repair/">Emergency Roof Repair</a></li>
+      </ul>
+    </li>
+    <li class="nav-has-drop">
+      <a href="/locations/">Locations ▾</a>
+      <ul class="nav-dropdown nav-dropdown-wide">
+        <li class="nav-has-subdrop">
+          <a href="/locations/dubai/">Dubai ▸</a>
+          <ul class="nav-subdropdown">
+            <li><a href="/locations/dubai/deira/">Deira</a></li>
+            <li><a href="/locations/dubai/downtown/">Downtown</a></li>
+            <li><a href="/locations/dubai/jebel-ali/">Jebel Ali</a></li>
+            <li><a href="/locations/dubai/emirates-hills/">Emirates Hills</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-subdrop">
+          <a href="/locations/abu-dhabi/">Abu Dhabi ▸</a>
+          <ul class="nav-subdropdown">
+            <li><a href="/locations/abu-dhabi/mussafah/">Mussafah</a></li>
+            <li><a href="/locations/abu-dhabi/al-ain/">Al Ain</a></li>
+          </ul>
+        </li>
+        <li class="nav-has-subdrop">
+          <a href="/locations/sharjah/">Sharjah ▸</a>
+          <ul class="nav-subdropdown">
+            <li><a href="/locations/sharjah/emirates-industrial-city/">Emirates Industrial City</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-has-drop">
+      <a href="/resources/">Resources ▾</a>
+      <ul class="nav-dropdown">
+        <li><a href="/resources/blog/">Blog</a></li>
+        <li><a href="/resources/faq/">FAQ</a></li>
+        <li><a href="/resources/case-studies/">Case Studies</a></li>
+        <li><a href="/resources/pricing-guide/">Pricing Guide</a></li>
+      </ul>
+    </li>
+    <li><a href="/about/">About Us</a></li>
+    <li><a href="/contact/" class="nav-cta">Get Free Quote</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+    </header>
+    
+    <main>
+        <h1>Al Ain</h1>
+        <p>Page coming soon...</p>
+        <p><a href="/">← Back to Home</a></p>
+    </main>
+    
+    <script>
+function toggleNav() {
+  const navLinks = document.getElementById("navLinks");
+  const hamburger = document.getElementById("hamburger");
+  navLinks.classList.toggle("open");
+  hamburger.classList.toggle("open");
+}
+
+document.querySelectorAll(".nav-has-drop, .nav-has-subdrop").forEach(item => {
+  item.addEventListener("click", (e) => {
+    if (window.innerWidth <= 768) {
+      e.preventDefault();
+      item.classList.toggle("open");
+    }
+  });
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+      document.getElementById("navLinks").classList.remove("open");
+      document.getElementById("hamburger").classList.remove("open");
+    }
+  });
+});
+
+document.querySelectorAll(".nav-links a, .nav-dropdown a, .nav-subdropdown a").forEach(link => {
+  const href = link.getAttribute("href").replace(/\/$/, "");
+  const currentPath = window.location.pathname.replace(/\/$/, "").replace(/index\.html$/, "");
+  if (href === "/" && currentPath === "") {
+    link.classList.add("active");
+  } else if (href !== "/" && currentPath.startsWith(href)) {
+    link.classList.add("active");
+  }
+});
+</script>
 </body>
 </html>
