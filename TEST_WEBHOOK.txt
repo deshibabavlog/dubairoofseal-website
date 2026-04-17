@@ -1,0 +1,6 @@
+
+This is a test file to verify the webhook auto-deployment is working correctly.
+
+If this file appears in Hostinger File Manager at /public_html/TEST_WEBHOOK.txt
+within 30 seconds, the webhook is working perfectly!
+
