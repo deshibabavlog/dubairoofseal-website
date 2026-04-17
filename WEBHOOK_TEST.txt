@@ -1,0 +1,9 @@
+Webhook Test - Ready for deployment
+Files ready:
+- dubai-waterproofing.html
+- abu-dhabi-waterproofing.html
+- sharjah-waterproofing.html
+- .htaccess (fixed)
+- index.html (updated)
+
+Deploy timestamp: $(date)
