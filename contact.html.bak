@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
+  <title>Contact Us | Dubai Roof Seal — Free Roof Inspection Dubai</title>
+  <meta name="description" content="Contact Dubai Roof Seal for a free roof inspection in Dubai. WhatsApp +971 56 112 3894. Response within 30 minutes. 7 days a week including weekends." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://dubairoofseal.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dubairoofseal.com/contact.html" />
+  <meta property="og:title" content="Contact Dubai Roof Seal — Free Inspection" />
+  <meta property="og:description" content="WhatsApp or call us for a free roof inspection in Dubai. Response within 30 minutes. 7 days a week." />
+  <meta property="og:image" content="https://dubairoofseal.com/og-image.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Dubai Roof Seal",
+    "url": "https://dubairoofseal.com",
+    "telephone": "+971561123894",
+    "email": "info@dubairoofseal.com",
+    "address": {"@type": "PostalAddress","streetAddress": "Jebel Ali","addressLocality": "Dubai","addressCountry": "AE"},
+    "openingHoursSpecification": [
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens": "08:00","closes": "19:00"},
+      {"@type": "OpeningHoursSpecification","dayOfWeek": ["Sunday"],"opens": "09:00","closes": "17:00"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#1A3A5C; --gold:#E8A020; --teal:#0F6E56; --white:#FFFFFF; --light-bg:#F4F7FB; --dark-text:#2C2C2C; --light-text:#555; --border:#dde3ed; }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;scroll-padding-top:104px;}
+    body{font-family:'Open Sans',Arial,sans-serif;color:var(--dark-text);background:#fff;}
+    img{max-width:100%;display:block;} a{text-decoration:none;color:inherit;} ul{list-style:none;}
+
+    /* TOP BAR */
+    .top-bar{background:#060f1c;padding:7px 24px;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;}
+    .top-bar a{display:inline-flex;align-items:center;gap:7px;color:rgba(255,255,255,0.78);font-size:0.78rem;font-weight:500;transition:color 0.2s;white-space:nowrap;}
+    .top-bar a:hover{color:var(--gold);}
+    .top-bar a svg{width:14px;height:14px;fill:var(--gold);flex-shrink:0;}
+    .top-bar-sep{color:rgba(255,255,255,0.2);font-size:0.7rem;}
+    @media(max-width:600px){.top-bar{gap:14px;}.top-bar-sep{display:none;}}
+
+    /* HEADER */
+    header{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--navy);box-shadow:0 2px 12px rgba(0,0,0,0.18);display:flex;flex-direction:column;}
+    nav{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:80px;}
+    .logo{display:flex;align-items:center;gap:10px;}
+    .nav-logo{height:68px;width:auto;filter:invert(1);mix-blend-mode:screen;transition:opacity 0.2s;}
+    .nav-logo:hover{opacity:0.85;}
+    .logo-text{display:flex;flex-direction:column;justify-content:center;line-height:1;}
+    .logo-name{font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.15rem;color:var(--white);letter-spacing:-0.3px;line-height:1.2;}
+    .logo-tag{font-family:'Montserrat',sans-serif;font-weight:500;font-size:0.62rem;color:var(--teal);letter-spacing:0.08em;text-transform:uppercase;margin-top:3px;}
+    .nav-links{display:flex;gap:32px;align-items:center;}
+    .nav-links a{color:rgba(255,255,255,0.85);font-size:0.9rem;font-weight:500;transition:color 0.2s;padding:8px 0;}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold);}
+    .nav-has-drop{position:relative;}
+    .nav-dropdown{display:none;position:absolute;top:100%;left:50%;transform:translateX(-50%);background:var(--white);border-radius:10px;min-width:220px;box-shadow:0 8px 32px rgba(0,0,0,0.13);padding:8px 0;z-index:200;}
+    .nav-has-drop:hover .nav-dropdown{display:block;}
+    .nav-dropdown li a{display:block;padding:11px 22px;color:var(--navy)!important;font-size:0.875rem;font-weight:500;transition:background 0.15s;}
+    .nav-dropdown li a:hover{background:var(--light-bg);color:var(--teal)!important;}
+    .nav-cta{background:var(--gold);color:var(--navy)!important;font-weight:700!important;padding:9px 20px;border-radius:6px;transition:background 0.2s,transform 0.15s!important;}
+    .nav-cta:hover{background:#d4911a!important;transform:translateY(-1px);}
+    .hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px;}
+    .hamburger span{width:26px;height:2.5px;background:#fff;border-radius:2px;transition:0.3s;}
+
+    /* PAGE HERO */
+    .page-hero{background:linear-gradient(135deg,#0d2540 0%,var(--navy) 60%,#1a4a6e 100%);padding:160px 24px 80px;text-align:center;position:relative;overflow:hidden;}
+    .page-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(232,160,32,0.08) 0%,transparent 60%);}
+    .page-hero-badge{display:inline-block;background:rgba(232,160,32,0.15);border:1px solid rgba(232,160,32,0.35);color:var(--gold);font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:6px 18px;border-radius:20px;margin-bottom:20px;}
+    .page-hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:800;color:var(--white);line-height:1.15;margin-bottom:16px;}
+    .page-hero h1 span{color:var(--gold);}
+    .page-hero p{font-size:1.05rem;color:rgba(255,255,255,0.78);max-width:600px;margin:0 auto 28px;line-height:1.7;}
+    .breadcrumb{display:flex;justify-content:center;gap:8px;font-size:0.8rem;color:rgba(255,255,255,0.5);margin-top:20px;}
+    .breadcrumb a{color:rgba(255,255,255,0.6);transition:color 0.2s;}
+    .breadcrumb a:hover{color:var(--gold);}
+    .breadcrumb span{color:var(--gold);}
+
+    /* CONTACT GRID */
+    .contact-section{padding:80px 0;background:#fff;}
+    .section-wrap{max-width:1200px;margin:0 auto;padding:0 24px;}
+    .contact-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start;}
+
+    /* CONTACT INFO */
+    .contact-info h2{font-family:'Montserrat',sans-serif;font-size:1.8rem;font-weight:800;color:var(--navy);margin-bottom:12px;line-height:1.2;}
+    .contact-info h2 span{color:var(--gold);}
+    .contact-info > p{font-size:0.95rem;color:var(--light-text);line-height:1.75;margin-bottom:36px;}
+    .contact-methods{display:flex;flex-direction:column;gap:16px;margin-bottom:36px;}
+    .contact-method{display:flex;align-items:flex-start;gap:16px;padding:20px;border-radius:12px;border:1px solid var(--border);transition:box-shadow 0.2s,border-color 0.2s;}
+    .contact-method:hover{box-shadow:0 6px 20px rgba(26,58,92,0.1);border-color:var(--gold);}
+    .method-icon{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;}
+    .method-icon.wa{background:rgba(37,211,102,0.1);}
+    .method-icon.phone{background:rgba(26,58,92,0.08);}
+    .method-icon.email{background:rgba(232,160,32,0.1);}
+    .method-icon.location{background:rgba(15,110,86,0.1);}
+    .method-content h4{font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--light-text);margin-bottom:4px;}
+    .method-content a,.method-content p{font-size:0.95rem;font-weight:600;color:var(--navy);line-height:1.5;}
+    .method-content a:hover{color:var(--gold);}
+    .method-content small{display:block;font-size:0.78rem;color:var(--light-text);font-weight:400;margin-top:2px;}
+    .hours-box{background:var(--light-bg);border-radius:12px;padding:24px;border:1px solid var(--border);}
+    .hours-box h4{font-family:'Montserrat',sans-serif;font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--navy);margin-bottom:14px;}
+    .hours-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:0.85rem;}
+    .hours-row:last-child{border-bottom:none;}
+    .hours-row .day{color:var(--light-text);}
+    .hours-row .time{font-weight:600;color:var(--navy);}
+    .hours-row .time.emergency{color:var(--teal);}
+
+    /* FORM */
+    .contact-form-wrap{background:var(--light-bg);border-radius:16px;padding:40px;border:1px solid var(--border);}
+    .form-title{font-family:'Montserrat',sans-serif;font-size:1.3rem;font-weight:800;color:var(--navy);margin-bottom:6px;}
+    .form-subtitle{font-size:0.85rem;color:var(--light-text);margin-bottom:28px;line-height:1.6;}
+    .form-group{margin-bottom:18px;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    label{display:block;font-family:'Montserrat',sans-serif;font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--navy);margin-bottom:7px;}
+    input,select,textarea{width:100%;padding:13px 16px;border:1.5px solid var(--border);border-radius:8px;font-family:'Open Sans',sans-serif;font-size:0.9rem;color:var(--dark-text);background:#fff;transition:border-color 0.2s,box-shadow 0.2s;outline:none;}
+    input:focus,select:focus,textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px rgba(232,160,32,0.12);}
+    textarea{resize:vertical;min-height:110px;}
+    select{cursor:pointer;}
+    .form-submit{width:100%;background:var(--gold);color:var(--navy);font-family:'Montserrat',sans-serif;font-weight:800;font-size:1rem;padding:16px;border:none;border-radius:8px;cursor:pointer;transition:background 0.2s,transform 0.15s;text-transform:uppercase;letter-spacing:0.06em;margin-top:8px;}
+    .form-submit:hover{background:#d4911a;transform:translateY(-2px);}
+    .form-note{font-size:0.75rem;color:var(--light-text);text-align:center;margin-top:12px;line-height:1.6;}
+    .form-success{display:none;background:rgba(15,110,86,0.08);border:1.5px solid var(--teal);border-radius:10px;padding:20px;text-align:center;margin-top:16px;}
+    .form-success h4{font-family:'Montserrat',sans-serif;color:var(--teal);font-weight:700;margin-bottom:6px;}
+    .form-success p{font-size:0.85rem;color:var(--light-text);}
+
+    /* WHATSAPP BANNER */
+    .wa-banner{background:linear-gradient(135deg,#075e54,#128c7e);padding:60px 24px;text-align:center;}
+    .wa-banner h2{font-family:'Montserrat',sans-serif;font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:#fff;margin-bottom:10px;}
+    .wa-banner p{color:rgba(255,255,255,0.85);font-size:0.95rem;max-width:500px;margin:0 auto 28px;line-height:1.7;}
+    .wa-big-btn{display:inline-flex;align-items:center;gap:12px;background:#25d366;color:#fff;font-family:'Montserrat',sans-serif;font-weight:800;font-size:1.1rem;padding:18px 40px;border-radius:50px;box-shadow:0 8px 28px rgba(37,211,102,0.4);transition:transform 0.2s,box-shadow 0.2s;}
+    .wa-big-btn:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(37,211,102,0.5);}
+    .wa-big-btn svg{width:28px;height:28px;fill:#fff;flex-shrink:0;}
+
+    /* MAP */
+    .map-section{padding:0;}
+    .map-section iframe{width:100%;height:400px;border:none;display:block;filter:grayscale(20%);}
+
+    /* AREAS */
+    .areas-section{padding:72px 0;background:var(--navy);}
+    .areas-section .section-label{color:var(--gold);display:block;font-family:'Montserrat',sans-serif;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:10px;}
+    .areas-title{font-family:'Montserrat',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:800;color:#fff;margin-bottom:10px;}
+    .areas-title span{color:var(--gold);}
+    .areas-desc{color:rgba(255,255,255,0.7);font-size:0.95rem;max-width:560px;margin-bottom:36px;line-height:1.7;}
+    .areas-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;}
+    .area-pill{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:8px;padding:10px 16px;font-size:0.82rem;color:rgba(255,255,255,0.8);text-align:center;transition:background 0.2s,border-color 0.2s;}
+    .area-pill:hover{background:rgba(232,160,32,0.12);border-color:rgba(232,160,32,0.3);color:var(--gold);}
+
+    /* FOOTER */
+    footer{background:#0d2030;color:rgba(255,255,255,0.72);padding:60px 24px 0;}
+    .footer-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;padding-bottom:48px;}
+    .footer-logo{height:70px;width:auto;filter:invert(1);mix-blend-mode:screen;}
+    .footer-brand p{font-size:0.85rem;line-height:1.75;margin-top:16px;max-width:300px;}
+    .footer-col h4{font-family:'Montserrat',sans-serif;font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#fff;margin-bottom:18px;}
+    .footer-col ul{display:flex;flex-direction:column;gap:10px;}
+    .footer-col ul li a{font-size:0.83rem;color:rgba(255,255,255,0.6);transition:color 0.2s;}
+    .footer-col ul li a:hover{color:var(--gold);}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding:24px 0;max-width:1200px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:12px;}
+    .footer-bottom p{font-size:0.78rem;color:rgba(255,255,255,0.4);text-align:center;}
+    .footer-social{display:flex;gap:14px;}
+    .footer-social a{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:center;transition:background 0.2s;}
+    .footer-social a:hover{background:var(--gold);}
+    .footer-social a svg{width:18px;height:18px;fill:#fff;display:block;}
+    .wa-float{position:fixed;bottom:28px;right:28px;z-index:999;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,0.4);font-size:1.6rem;transition:transform 0.2s,box-shadow 0.2s;}
+    .wa-float:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(37,211,102,0.55);}
+
+    @media(max-width:900px){
+      .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:20px 24px 28px;gap:6px;box-shadow:0 8px 24px rgba(0,0,0,0.2);}
+      .nav-links.open{display:flex;}
+      .nav-links a{padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.07);font-size:1rem;}
+      .hamburger{display:flex;}
+      .contact-grid{grid-template-columns:1fr;}
+      .footer-inner{grid-template-columns:1fr 1fr;gap:32px;}
+    }
+    @media(max-width:600px){
+      .form-row{grid-template-columns:1fr;}
+      .footer-inner{grid-template-columns:1fr;}
+      .contact-form-wrap{padding:24px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="top-bar">
+    <a href="tel:+971561123894">
+      <svg viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.47 11.47 0 0 0 3.58.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.58a1 1 0 0 1-.25 1.01z"/></svg>
+      +971 56 112 3894
+    </a>
+    <span class="top-bar-sep">|</span>
+    <a href="https://wa.me/971561123894?text=Hi%2C%20I%20need%20a%20free%20roof%20inspection" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.533 5.849L.054 23.5l5.797-1.519A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.523-5.19-1.434l-.372-.22-3.441.902.916-3.348-.242-.386A9.943 9.943 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+      WhatsApp Us
+    </a>
+    <span class="top-bar-sep">|</span>
+    <a href="mailto:info@dubairoofseal.com">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      info@dubairoofseal.com
+    </a>
+  </div>
+  <nav>
+    <a href="index.html" class="logo" aria-label="Dubai Roof Seal - Home">
+      <img src="logo.png" alt="Dubai Roof Seal Logo" class="nav-logo" />
+      <div class="logo-text">
+        <span class="logo-name">Dubai Roof Seal</span>
+        <span class="logo-tag">Waterproofing &amp; Technical Services</span>
+      </div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li class="nav-has-drop">
+        <a href="services.html">Services ▾</a>
+        <ul class="nav-dropdown">
+          <li><a href="metal-roof-waterproofing-dubai.html">Metal Roof Waterproofing</a></li>
+          <li><a href="services.html#waterproofing">Waterproofing Services</a></li>
+          <li><a href="services.html#additional">Additional Services</a></li>
+          <li><a href="services.html#technical">Technical Works</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#our-work">Our Work</a></li>
+      <li><a href="company.html">Clients &amp; Team</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+      <li><a href="contact.html" class="nav-cta active">Free Inspection</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-badge">📞 Response Within 30 Minutes</div>
+  <h1>Get Your <span>Free Inspection</span></h1>
+  <p>WhatsApp, call or fill in the form — we respond within 30 minutes and visit within 24–48 hours. No obligation, no pressure.</p>
+  <div class="breadcrumb">
+    <a href="index.html">Home</a>
+    <span>›</span>
+    <span>Contact</span>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="section-wrap">
+    <div class="contact-grid">
+
+      <!-- LEFT: Info -->
+      <div class="contact-info">
+        <h2>Talk to Us <span>Today</span></h2>
+        <p>We're based in Dubai and operate 7 days a week. WhatsApp is the fastest way to reach us — we typically respond within 30 minutes during working hours.</p>
+
+        <div class="contact-methods">
+          <a href="https://wa.me/971561123894?text=Hi%2C%20I%20need%20a%20free%20roof%20inspection" target="_blank" rel="noopener noreferrer" class="contact-method">
+            <div class="method-icon wa">💬</div>
+            <div class="method-content">
+              <h4>WhatsApp (Fastest)</h4>
+              <a href="https://wa.me/971561123894">+971 56 112 3894</a>
+              <small>Tap to open WhatsApp — response within 30 mins</small>
+            </div>
+          </a>
+          <a href="tel:+971561123894" class="contact-method">
+            <div class="method-icon phone">📞</div>
+            <div class="method-content">
+              <h4>Phone Call</h4>
+              <a href="tel:+971561123894">+971 56 112 3894</a>
+              <small>Sat–Thu 8am–7pm · Fri 9am–5pm</small>
+            </div>
+          </a>
+          <a href="mailto:info@dubairoofseal.com" class="contact-method">
+            <div class="method-icon email">✉️</div>
+            <div class="method-content">
+              <h4>Email</h4>
+              <a href="mailto:info@dubairoofseal.com">info@dubairoofseal.com</a>
+              <small>For quotes & formal correspondence</small>
+            </div>
+          </a>
+          <a href="mailto:inspections@dubairoofseal.com" class="contact-method">
+            <div class="method-icon email">🔍</div>
+            <div class="method-content">
+              <h4>Inspections Email</h4>
+              <a href="mailto:inspections@dubairoofseal.com">inspections@dubairoofseal.com</a>
+              <small>Specifically for booking site inspections</small>
+            </div>
+          </a>
+          <div class="contact-method">
+            <div class="method-icon location">📍</div>
+            <div class="method-content">
+              <h4>Based In</h4>
+              <p>Jebel Ali, Dubai, UAE</p>
+              <small>Covering all Dubai areas + Sharjah & Ajman</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hours-box">
+          <h4>🕐 Working Hours</h4>
+          <div class="hours-row"><span class="day">Saturday – Thursday</span><span class="time">8:00 AM – 7:00 PM</span></div>
+          <div class="hours-row"><span class="day">Friday</span><span class="time">9:00 AM – 5:00 PM</span></div>
+          <div class="hours-row"><span class="day">Emergency Leaks</span><span class="time emergency">24/7 via WhatsApp</span></div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="contact-form-wrap">
+        <div class="form-title">Book a Free Site Inspection</div>
+        <div class="form-subtitle">Fill in your details and we'll contact you within 30 minutes to arrange a free inspection at your property.</div>
+
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" placeholder="Mohammed Al Rashid" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">WhatsApp / Phone *</label>
+              <input type="tel" id="phone" placeholder="+971 50 000 0000" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="service">Service Required *</label>
+              <select id="service" required>
+                <option value="">Select a service...</option>
+                <option>Metal Roof Waterproofing</option>
+                <option>Flat Roof Waterproofing</option>
+                <option>Villa Roof Waterproofing</option>
+                <option>Water Tank Waterproofing</option>
+                <option>Emergency Roof Leak Repair</option>
+                <option>Epoxy Flooring</option>
+                <option>Annual Maintenance Contract</option>
+                <option>Facade Cleaning</option>
+                <option>Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="area">Location / Area *</label>
+              <input type="text" id="area" placeholder="Al Quoz, Jebel Ali..." required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell Us About Your Roof</label>
+            <textarea id="message" placeholder="e.g. Warehouse metal roof leaking near ridgeline, approx 2000 sqm. Need inspection ASAP..."></textarea>
+          </div>
+          <button type="submit" class="form-submit">📋 Request Free Inspection</button>
+          <p class="form-note">✓ Free with zero obligation &nbsp;·&nbsp; ✓ Response within 30 minutes &nbsp;·&nbsp; ✓ Visit within 24–48 hours</p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <h4>✅ Request Received!</h4>
+          <p>We'll WhatsApp or call you within 30 minutes to confirm your free inspection. Thank you!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHATSAPP BANNER -->
+<div class="wa-banner">
+  <h2>Prefer to WhatsApp Directly?</h2>
+  <p>Most clients find WhatsApp the fastest way to get a quote. Send us photos of your roof and we can often give an estimate before visiting.</p>
+  <a href="https://wa.me/971561123894?text=Hi%2C%20I%20need%20a%20free%20roof%20inspection%20in%20Dubai" class="wa-big-btn" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.533 5.849L.054 23.5l5.797-1.519A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.893 0-3.67-.523-5.19-1.434l-.372-.22-3.441.902.916-3.348-.242-.386A9.943 9.943 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    WhatsApp +971 56 112 3894
+  </a>
+</div>
+
+<!-- MAP -->
+<div class="map-section">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231312.93979689576!2d55.02996!3d25.07725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbf9a7df64d97527!2sDubai%20-%20Jebel%20Ali!5e0!3m2!1sen!2sae!4v1713340000000!5m2!1sen!2sae" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dubai Roof Seal Location - Jebel Ali Dubai"></iframe>
+</div>
+
+<!-- AREAS -->
+<section class="areas-section">
+  <div class="section-wrap">
+    <span class="section-label">Coverage Area</span>
+    <h2 class="areas-title">We Cover All <span>Dubai Areas</span></h2>
+    <p class="areas-desc">Based in Jebel Ali, we operate 7 days a week across all Dubai areas — plus Sharjah and Ajman.</p>
+    <div class="areas-grid">
+      <div class="area-pill">Jebel Ali</div>
+      <div class="area-pill">JAFZA</div>
+      <div class="area-pill">Al Quoz</div>
+      <div class="area-pill">Jumeirah</div>
+      <div class="area-pill">Al Barsha</div>
+      <div class="area-pill">Business Bay</div>
+      <div class="area-pill">Downtown Dubai</div>
+      <div class="area-pill">Mirdif</div>
+      <div class="area-pill">Dubai South</div>
+      <div class="area-pill">DIP</div>
+      <div class="area-pill">Arabian Ranches</div>
+      <div class="area-pill">Deira</div>
+      <div class="area-pill">Bur Dubai</div>
+      <div class="area-pill">JLT</div>
+      <div class="area-pill">Silicon Oasis</div>
+      <div class="area-pill">Sharjah</div>
+      <div class="area-pill">Ajman</div>
+      <div class="area-pill">Motor City</div>
+      <div class="area-pill">Sports City</div>
+      <div class="area-pill">Al Furjan</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="index.html"><img src="logo.png" alt="Dubai Roof Seal Logo" class="footer-logo" /></a>
+      <p>Professional roof waterproofing and metal roof repair for villas, warehouses, commercial buildings across all Dubai areas. Free site inspection. 5-year written warranty.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="services.html#waterproofing">Metal Roof Waterproofing</a></li>
+        <li><a href="services.html#waterproofing">Flat Roof Waterproofing</a></li>
+        <li><a href="services.html#waterproofing">Villa Roof Waterproofing</a></li>
+        <li><a href="services.html#waterproofing">Emergency Repairs</a></li>
+        <li><a href="services.html#additional">Epoxy Flooring</a></li>
+        <li><a href="services.html#technical">Technical Works</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/971561123894" target="_blank" rel="noopener noreferrer">WhatsApp: +971 56 112 3894</a></li>
+        <li><a href="mailto:info@dubairoofseal.com">info@dubairoofseal.com</a></li>
+        <li><a href="mailto:inspections@dubairoofseal.com">inspections@dubairoofseal.com</a></li>
+        <li><a href="https://www.instagram.com/dubairoofseal" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.facebook.com/dubairoofseal" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Dubai Roof Seal. All rights reserved. | <a href="https://dubairoofseal.com/" style="color:var(--gold)">dubairoofseal.com</a></p>
+    <div class="footer-social">
+      <a href="https://www.facebook.com/dubairoofseal" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.792-4.697 4.532-4.697 1.313 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.267h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg></a>
+      <a href="https://www.instagram.com/dubairoofseal" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+      <a href="https://www.youtube.com/@DubaiRoofSeal" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      <a href="https://www.linkedin.com/company/dubairoofseal" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/971561123894?text=Hi%2C%20I%20need%20a%20free%20roof%20inspection" class="wa-float" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">💬</a>
+
+<script>
+  function toggleNav() { document.getElementById('navLinks').classList.toggle('open'); }
+  document.querySelectorAll('.nav-links a').forEach(a => { a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')); });
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const service = document.getElementById('service').value;
+    const area = document.getElementById('area').value;
+    const message = document.getElementById('message').value;
+    const waMsg = encodeURIComponent(`Hi, I'd like a free roof inspection.\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nArea: ${area}\nDetails: ${message}`);
+    window.open(`https://wa.me/971561123894?text=${waMsg}`, '_blank');
+    document.getElementById('contactForm').style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }
+</script>
+</body>
+</html>
